@@ -4,11 +4,11 @@
 
 
 
-var express = require("express");       //para traer la libreria de express
-var app = express();                    //para crear una instancia de express
+import cafecito from "express";    //para traer la libreria de express
+var app = cafecito();                    //para crear una instancia de express
 
 
-app.get('/', home); //obtiene el home y ejecuta la funcion home
+/*app.get('/', home); //obtiene el home y ejecuta la funcion home
 
 
 function home(req, res) {
@@ -16,4 +16,4 @@ function home(req, res) {
 }
 
 
-app.listen(3000);
+app.listen(3000);*/
