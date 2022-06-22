@@ -39,3 +39,37 @@ function dibujarteclado(evento)
         dibujarlinea("red","6","7",xfinal,yfinal);
     }
 }
+
+
+//crear objetos nuevos
+
+var imagen = new Image();      //instancia del obejetivo o classe image
+imagen.src = "imagen.png";      //ruta de la imagen
+imagen.addEventListener("load", dibujarimagen);     //cuando se cargue la imagen se llamara a la funcion para que dibuje encima de la imagen i no antes
+
+
+function dibujarimagen()
+{
+    lienzo.drawImage(imagen,0,0);
+}
+
+
+
+//crear una classe
+class pakiman
+{
+    constructor(x,y,vida,velocidad)
+    {
+        this.x = x;
+        this.y = y;
+        this.vida = vida;
+        this.velocidad = velocidad;
+        this.imagen= new Image();
+        imagen.src = "imagen.png";
+    }
+
+    mostrar()
+    {
+        document.body.appendChild(this.imagen);
+    }
+}
