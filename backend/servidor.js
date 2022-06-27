@@ -1,7 +1,7 @@
 
 
 
-
+//MONTAMOS EL SERVIDOR CON NODE JS
 
 var cafecito = require("express");       //para traer la libreria de express
 var app = cafecito();               //para crear una instancia de express
