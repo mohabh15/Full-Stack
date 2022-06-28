@@ -1,7 +1,7 @@
 *{     
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
     font-family: Roboto, sans-serif;
     
    
@@ -14,12 +14,21 @@ body{
 
 header{
     max-width: 1200px;
-    height: 100%;
+    height: 30px;
+    width: 900px;
+
     padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    position: sticky;
+    top: 15px;
+    
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    opacity: 0.9;
+    
 }
 
 
@@ -28,6 +37,13 @@ header{
     display: flex;
     align-items: center;
 }
+
+.logo h1:hover{
+    cursor: pointer;
+    text-shadow: 2px 5px 5px rgb(175, 11, 224);
+    transform: rotate(-10deg);
+}
+
 
 .logo img{
     width: 80px;
@@ -44,15 +60,22 @@ nav ul li{
     padding: 0px 20px;
 }
 
+nav ul li:hover{
+    transform: rotate(-5deg);
+}
+
 nav ul li a{
     text-decoration: none;
     color: #000;
+    font-weight: bold;
+    font-size: 17px;
     transition: opacity 300ms;
 }
 
 nav ul li a:hover{
     opacity: 0,8;
     color: blueviolet ;
+    
 }
 
 
@@ -96,6 +119,8 @@ main{
     align-items: center;
     display: flex;
     flex-direction: column;
+
+    margin-top: 15px;
    
 }
 
@@ -162,6 +187,12 @@ main{
     text-align: center;
 }
 
+.caracteristicas_item:hover
+{
+    box-shadow: 2px 2px 15px 1px rgb(41, 8, 233);
+    
+}
+
 .caracteristicas_item h2{
     font-size: 50px;
     color: rgb(0, 0, 0);
@@ -174,6 +205,7 @@ main{
     color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 5px;
+    cursor: auto;
 }
 
 
@@ -227,7 +259,6 @@ main{
 
 footer{
     max-width: 100%;
-    height: 70px;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -276,6 +307,8 @@ footer{
     .caracteristicas_item p{
         font-size: 20px;
     }
+
+    /*añadir opcion que las cartas se pongan una debajo de la otra*/
     
     
 }
@@ -321,8 +354,6 @@ ESPECIFIDAD CSS
 METODOLOGIA BEM
 
 
-
-
 NORMALIZE CSS I TEORIA DE CAJAS
 Normalizar es resetear todos los estilos de css
 
@@ -330,6 +361,69 @@ cajas
 
 1. en linia: el ancho es solo el elemento en si
 2. en bloques: el ancho ocupa todo el ancho del contenedor que lo contiene
+
+propiedades:
+outline: none;  //resalta y no afecta al DOM no ocupa espacio
+
+position: hay que posicionar las cosas para que tengan las propiedad de 
+top,left,z-index,etc
+
+absolute; //posicion absoluta y desaparece el esapcio de dicha posicion 
+i se ajusta al contenido
+relative; //posicion relativa y sigue el esapcio de su contenedor
+fixed; //posicion fija
+z-index: //especifica el orden de la capa para poner a un padre encima 
+del hijo tenemos que darle un z-index negativo al hijo i al padre no
+definirle un z-index. 
+
+
+cuando los elementos en modo absolute estan dentro de un contenedor posicionado 
+toman 
+como referencia este contenedor i no el viewport
+
+overflow es el scroll
+overflow-x: hidden; //oculta el scroll horizontal y recorta lo que se sobresale
+overflow-y: hidden; //oculta el scroll vertical
+
+float solo usar para que un texto envuelva a una imagen
+
+:placeholder    //especifica el texto que se muestra en el input cuando no hay nada escrito
+:selecction     //es el estilo de la seleccion
+
+seudoclasses
+:lang   //especifica el idioma de un elemento
+:hover //cuando el mouse pasa por encima del elemento
+:active //cuando el mouse esta presionado en el elemento
+:focus //cuando el elemento tiene el foco en los inputs esta seleccionado
+:visited //cuando el elemento fue visitado
+:link //cuando el elemento es un link aun no visitado
+:target //cuando el elemento es el target
+:enabled //cuando el elemento esta habilitado
+:disabled //cuando el elemento esta deshabilitado
+:checked //cuando el elemento esta checkeado
+:empty //cuando el elemento esta vacio
+:first-child //cuando el elemento es el primero de su contenedor
+:last-child //cuando el elemento es el ultimo de su contenedor
+:first-of-type //cuando el elemento es el primero de su tipo
+:last-of-type //cuando el elemento es el ultimo de su tipo
+:only-child //cuando el elemento es el unico hijo de su contenedor
+:only-of-type //cuando el elemento es el unico de su tipo
+:nth-child(n) //cuando el elemento es el n-esimo hijo de su contenedor
+:nth-last-child(n) //cuando el elemento es el n-esimo ultimo hijo de su contenedor
+:not(selector) //cuando el elemento no es el selector
+
+
+Object Fit
+object-fit: cover; //toma el tamaño del contenedor 
+object-fit: contain; //
+object-fit: fill; //
+object-fit: none; //por defecto
+
+object-position: center; //posicion del objeto en el contenedor
+object-position: top; //
+object-position: bottom; //
+object-position: left; //
+object-position: right; //
 
 
 
