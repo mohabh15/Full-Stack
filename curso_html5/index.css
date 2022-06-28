@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    
    
 }
 
@@ -20,6 +21,8 @@ header{
     align-items: center;
     margin: auto;
 }
+
+
 
 .logo{
     display: flex;
@@ -76,7 +79,10 @@ nav ul li a:hover{
 }
 
 
+main{
+    width:100%;
 
+}
 
 .cover{
     width: 100%;
@@ -153,22 +159,23 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
 }
 
 .caracteristicas_item h2{
-    font-size: 49px;
-    color: rgb(207, 28, 28);
+    font-size: 50px;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 5px;
 }
 
 .caracteristicas_item p{
     font-size: 22px;
-    color: rgb(2, 196, 255);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 5px;
 }
+
 
 
 #examenes{
@@ -207,8 +214,14 @@ nav ul li a:hover{
 }
 
 
+.caracteristicas_item h2:hover{
+    color: blueviolet;
+    
+}
 
-
+.caracteristicas_item p:hover{
+    color: blue;
+}
 
 
 
@@ -227,21 +240,45 @@ footer{
 
 
 
+@media screen and (max-width: 995px){
+   
+    .header_signin_register{
+        display: none;
+    }
 
+    nav{
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.5);
+        border: 50px;
+    }
 
+    
+    header nav ul{
+        padding: 20px 0px;
+        flex-direction: column;
+        background: #fff;
+        
+    }
 
+    header nav ul li{
+        padding: 10px 40px;
+        
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .caracteristicas_item h2{
+        font-size: 39px;
+    }
+    
+    .caracteristicas_item p{
+        font-size: 20px;
+    }
+    
+    
+}
 
 
 
