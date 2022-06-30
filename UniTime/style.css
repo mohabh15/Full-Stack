@@ -426,5 +426,44 @@ object-position: left; //
 object-position: right; //
 
 
+Display flex
+display: flex; //es una propiedad que permite que un elemento se muestre como flex
+flex-direction: row, column ; //especifica la direccion de los elementos en el flex
+flex-wrap: wrap; //especifica que los elementos se muestren en una sola linea
+flex-flow: row, column; //especifica la direccion de los elementos en el flex y si se puede agregar una linea nueva
+flex-grow: 1; //especifica que el elemento ocupara todo el espacio disponible
+flex-shrink: 1; //especifica cuanto espacio sedecera
+flex-basis: auto; //especifica el tamaño del elemento
+
+align-items: flex-start, flex-end, center, baseline, stretch; //especifica la alineacion de los elementos en el flex
+align-content: flex-start, flex-end, center, space-between, space-around; //especifica la alineacion del contenido en el flex
+justify-content: flex-start, flex-end, center, space-between, space-around; //especifica la alineacion del contenido en el flex
+
+propiedades items
+align-self: flex-start, flex-end, center, baseline, stretch; //especifica la alineacion del elemento en el flex
+
+Margin dentro de una caja flex funciona distinto a fuera de 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 */
