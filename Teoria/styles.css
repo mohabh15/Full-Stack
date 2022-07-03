@@ -23,6 +23,11 @@ seleccion por id #id
 seleccion por tag tagname
 seleccion por atributo [atributo="valor"]
 
+Box.sizing:
+    content-box: se usa para que el elemento tenga un ancho y un alto fijo
+    border-box: se usa para que el elemento tenga un ancho y un alto fijo y tenga un borde
+    
+
 
 
 ESPECIFIDAD CSS
