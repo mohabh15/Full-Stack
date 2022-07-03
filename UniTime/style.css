@@ -333,8 +333,26 @@ footer{
 
 
 
-
 /* Language: css 
+
+
+
+COLORES
+#F9004D
+
+
+TRANSICIONES
+
+1. Ara que el boton se haga     .btn{
+   mas grande cuando se pase       transition: transform .4s
+   el mouse por encima          }
+                                .btn:hover{
+                                    transform: scale(1.1);
+                                }
+
+
+
+
 seleccion por classe .classe 
 seleccion por id #id
 seleccion por tag tagname
@@ -435,7 +453,7 @@ flex-grow: 1; //especifica que el elemento ocupara todo el espacio disponible
 flex-shrink: 1; //especifica cuanto espacio sedecera
 flex-basis: auto; //especifica el tamaño del elemento
 
-align-items: flex-start, flex-end, center, baseline, stretch; //especifica la alineacion de los elementos en el flex
+align-items: aliña verticalmente flex-start, flex-end, center, baseline, stretch; //especifica la alineacion de los elementos en el flex
 align-content: flex-start, flex-end, center, space-between, space-around; //especifica la alineacion del contenido en el flex
 justify-content: flex-start, flex-end, center, space-between, space-around; //especifica la alineacion del contenido en el flex
 
@@ -445,13 +463,42 @@ align-self: flex-start, flex-end, center, baseline, stretch; //especifica la ali
 Margin dentro de una caja flex funciona distinto a fuera de 
 
 
+GRID
+es como una tabla con diferentes celdas
 
+gird container //es el contenedor de las celdas
+grid item // cada elemento que sea hijo directo del contenedor que no una celda
+grid cell // cada celda de la tabla
+grid track (clomun i row) // cada una de las filas o columnas de la tabla
+grid area // cada una de las areas que seleccionamos o definimos de la tabla
+grid line // cada una de las lineas de la tabla
 
+propiedades de grid container
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); //especifica el numero de columnas y el tamaño de cada una
+grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); //especifica el numero de filas y el tamaño de cada una
 
+grid-gap: 10px; //especifica el espacio entre cada celda
+grid-column-gap: 10px; //especifica el espacio entre cada columna
+grid-row-gap: 10px; //especifica el espacio entre cada fila
+grid-auto-columns: minmax(100px, 1fr); //especifica el tamaño de las columnas automaticamente
+grid-auto-rows: minmax(100px, 1fr); //especifica el tamaño de las filas automaticamente
 
+grid-column: column-start / column-end; //especifica la columna de un elemento
+grid-row: row-start / row-end; //especifica la fila de un elemento
+grid-column-start: column; //especifica la columna de un elemento
+grid-column-end: column; //especifica la columna de un elemento
+grid-row-start: row; //especifica la fila de un elemento
+grid-row-end: row; //especifica la fila de un elemento
 
+Grid implicito: cuando hay mas celdas en el html de las que le decimos que cree el grid
 
-
+Grid Dinamico:
+minmax(100px, 1fr); //especifica el tamaño minimo y maximo de una celda
+mincontent; //especifica el tamaño minimo de una celda
+maxcontent; //especifica el tamaño maximo de una celda
+cantidad:
+auto-fill; //gener columnas
+auto-fit; escala las que ya hay
 
 
 
