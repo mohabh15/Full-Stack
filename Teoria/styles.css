@@ -167,13 +167,15 @@ minmax(100px, 1fr); //especifica el tamaño minimo y maximo de una celda
 mincontent; //especifica el tamaño minimo de una celda
 maxcontent; //especifica el tamaño maximo de una celda
 cantidad:
-auto-fill; //gener columnas
-auto-fit; escala las que ya hay
+auto-fill;
+auto-fit; //escala las que ya hay para que ocupen todo el esapcio disponible
 
 
 
 
 
+
+RESPONSIVE DISEGN
 
 
 
