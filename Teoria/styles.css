@@ -172,20 +172,97 @@ auto-fit; //escala las que ya hay para que ocupen todo el esapcio disponible
 
 
 
-
-
-
 RESPONSIVE DISEGN
 hacer mobile first
 maquetar cada contenedor con sus medidas antes de meterle los contenidos
 usar medidas dinamicas
 
 transiciones:
+    transition-property: propiedades que se van a animar poner las justas 
+    transition-duration: tiempo de duracion de la transicion
+    transition-timing-function: linear - ease - ease-in - ease-out - ease-in-out   //funcion de tiempo de la transicion 
+    transition-delay: tiempo de retraso de la transicion
+
+Animaciones:
+    @keyframes despalzamiento {     //especifica una animacion
+        from {
+            opacity: 0;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(100%);
+        }
+
+        o poner de esta otra manera:
+
+        0% {
+            opacity: 0;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(100%);
+        }
+    }
+ 
+    animation-name: nombre de la animacion
+    animation-duration: tiempo de duracion de la animacion
+    animation-timing-function: linear - ease - ease-in - ease-out - ease-in-out - cubic-bezier   //funcion de tiempo de la animacion 
+    animation-delay: tiempo de retraso de la animacion
+    animation-iteration-count: numero de veces que se repite la animacion
+    animation-direction: normal - reverse - alternate - alternate-reverse
+    animation-fill-mode: forwards - backwards - both
+    animation-play-state: running - paused
+    cubic-bezier(x1, y1, x2, y2); //especifica una curva de bezier
 
 
+Transform:
+    transform: translateX(100px) translateY(100px) rotate(45deg) scale(2); //especifica una transformacion
+    transform-origin: top left; //especifica el origen de la transformacion
+    transform-style: preserve-3d; //especifica que la transformacion sea 3d
+    backface-visibility: visible; //especifica que la transformacion sea visible
+    perspective: 1000px; //especifica la perspectiva de la transformacion
+    perspective-origin: top left; //especifica el origen de la perspectiva
+    backface-visibility: hidden; //especifica que la transformacion sea invisible
+    perspective-origin: top left; //especifica el origen de la perspectiva
+    backface-visibility: visible; //especifica que la transformacion sea visible
+    perspective: 1000px; //especifica la perspectiva de la transformacion
+    perspective-origin: top left; //especifica el origen de la perspectiva
+    backface-visibility: hidden; //especifica que la transformacion sea invisible
+    perspective-origin: top left; //especifica el origen de la perspectiva
+    backface-visibility: visible; //especifica que la transformacion sea visible
+    perspective: 1000px; //especifica la perspectiva de la transformacion
+    perspective-origin: top left; //especifica el origen de la perspectiva
+    backface-visibility: hidden; //especifica que la transformacion sea invisible
+    perspective-origin: top left; //especifica el origen de la perspectiva
+    backface-visibility: visible; //especifica que la transformacion sea visible
+    perspective: 1000px; //especifica la perspectiva de la transformacion
+    perspective-origin: top left; //especifica el origen de la perspectiva
+    backface-visibility: hidden; //especifica que la transformacion sea invisible
+    perspective-origin: top left; //especifica el origen de la perspectiva
+    backface-visibility: visible;
 
 
+Filter:
+
+    filter: blur(10px); //especifica un filtro de desenfoque
+    filter: grayscale(100%); //especifica un filtro de escala de grises
+    filter: sepia(100%); //especifica un filtro de sepia 
+    filter: saturate(100%); //especifica un filtro de saturacion
+    filter: hue-rotate(90deg); //especifica un filtro de rotacion de tono
+    filter: invert(100%); //especifica un filtro de inversion
+    filter: opacity(100%); //especifica un filtro de opacidad
+    filter: brightness(100%); //especifica un filtro de brillo
+    filter: contrast(100%); //especifica un filtro de contraste
+    filter: drop-shadow(0px,0px,0px,0px); //especifica un filtro de sombra
 
 
+    letter-spacing: 10px; //especifica el espacio entre letras
+    word-spacing: 10px; //especifica el espacio entre palabras
+    scroll-behavior: smooth; //especifica el comportamiento del scroll
+    text-shadow: 0px 0px 10px black; //especifica una sombra de texto
+    user-select: none; //especifica que no se pueda seleccionar el texto
+     
 
 */
